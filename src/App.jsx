@@ -12,17 +12,22 @@ function App() {
 
   const navigate = useNavigate()
 
-  function handleClick (){
+  function handleDetails (){
     navigate(routerPages.DETAILS, {})
   }
 
+  function handleHome (){
+    navigate(routerPages.HOME, {})
+  }
+
+
   return (
     <div className="App" style={{backgroundImage:`url(${bgImage})`}}>
-      <button onClick={handleClick}>
+      <button onClick={handleDetails}>
       User Details
       <Link to={routerPages.DETAILS}/>
       </button>
-      <button>
+      <button onClick={handleHome}>
         Back 
         <Link to={routerPages.HOME}/>
       </button>
