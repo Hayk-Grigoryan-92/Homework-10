@@ -1,0 +1,58 @@
+.questionContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+
+    .questionInput{
+        width: 70%;
+        text-align: center;
+        font-size: 26px;
+        input{
+            width: 100%;
+            height: 80px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(247, 239, 230);
+            }
+        }
+    }
+
+    .option{
+        width: 50%;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+
+            .radio{
+                width: 15px;
+            }
+
+            input{
+                width: 200px;
+                margin-left: 10px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgb(247, 239, 230);
+                }
+            }
+        
+       
+    }
+
+    .addQuestion{
+        width: 130px;
+        height: 60px;
+        cursor: pointer;
+        background-color: rgb(193, 189, 185);;
+
+        &:hover{
+            background-color: rgb(251, 238, 218);
+        }
+    }
+}
